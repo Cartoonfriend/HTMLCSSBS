@@ -3,8 +3,8 @@ html, body {
   }
   .container {
     display: grid;
-    grid-template-columns: repeat(50px, 14);
-    grid-template-rows: 100px 220px 150px;
+    grid-template-columns: repeat(50px, 12);
+    grid-template-rows: 100px 800px 150px;
     gap: 10px; 
     margin: 40px;
   }
@@ -13,23 +13,36 @@ html, body {
     grid-column-start: 1;
     grid-column-end: 12;
     grid-row-start: 1;
-    background: lightblue;
+    background: rgb(4, 57, 75);
+  }
+  .header h1 {
+    text-align: center;
+  }
+
+
+  .Menu nav ul li {
+    display: block;
+    margin-bottom: 50px  ;
+    margin-top: 50px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 200px;
+    grid-row-end: 300px ;
+    font-size: large;
   }
 
 
   
   .content {
-    grid-column-start: 1;
-    grid-column-end: 10;
-    grid-row-start: 2;
-    background: lightpink;
+    grid-column: 1/1;
+    background: rgb(4, 57, 75);
   }
   
   .aside {
-    grid-column-start: 10;
-    grid-column-end: 12;
+    grid-column:2/12;
     grid-row-start: 2;
-    background: lightgreen;
+    background-image: url(Images/Avengers.png);
+    background-size: 100% 100%;
   }
   
   .footer {
